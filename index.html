@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FreeFolio - Freelancer Portfolio Template</title>
+    <title>Isaac Maldonado - Freelancer Portfolio Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -30,7 +30,7 @@
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Free</span>Folio</h1>
+            <h1 class="m-0 display-5"><span class="text-primary">Isaac</span>Maldonado</h1>
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,6 @@
                 <a href="#service" class="nav-item nav-link">Service</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
                 <a href="#testimonial" class="nav-item nav-link">Review</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </nav>
@@ -82,6 +81,15 @@
                     <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Isaac Maldonado</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Web Developer, Front End Developer</div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Idioma
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#" onclick="changeLanguage('es')">Español</a>
+                            <a class="dropdown-item" href="#" onclick="changeLanguage('en')">Inglés</a>
+                        </div>
+                    </div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
                         <a href="curriculum/curriculum.pdf" class="btn btn-outline-light mr-5" download>Descargar Curriculum</a>
                         <a href="curriculum/curriculumENG.pdf" class="btn btn-outline-light mr-5" download>Download CV(English)</a>
@@ -94,86 +102,88 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+    <!-- About Start -->
+<!-- About Start -->
+<div class="container-fluid py-5" id="about">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;" id="about-header">About</h1>
+            <h1 class="position-absolute text-uppercase text-primary" id="about-subheader">About Me</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-5 pb-4 pb-lg-0">
+                <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Programmer & Web Developer</h3>
-                    <p>I'm Isaac, a passionate programmer and web developer from Chile with experience in front-end development, designing user-friendly websites, and enhancing web performance. I previously worked at BilbaoLabs, contributing to diverse projects for businesses, and now focus on creating custom websites for personal and local ventures. With a foundation in programming since my teens and ongoing studies in Software Development at BYU Idaho, I bring creativity, dedication, and a love for continuous learning to every project I take on.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">3 Years</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+56 9 6452 4143</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">isaacserviciosweb@gmail.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Chile</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
-                    </div>
+            <div class="col-lg-7">
+                <h3 id="about-title" class="mb-4">Programmer & Web Developer</h3>
+                <p id="about-description">I'm Isaac, a passionate programmer and web developer from Chile with experience in front-end development, designing user-friendly websites, and enhancing web performance. I previously worked at BilbaoLabs, contributing to diverse projects for businesses, and now focus on creating custom websites for personal and local ventures. With a foundation in programming since my teens and ongoing studies in Software Development at BYU Idaho, I bring creativity, dedication, and a love for continuous learning to every project I take on.</p>
+                <div class="row mb-3">
+                    <div class="col-sm-6 py-2"><h6 id="experience-title">Experience: <span class="text-secondary" id="experience-description">3 Years</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6 id="phone-title">Phone: <span class="text-secondary" id="phone-description">+56 9 6452 4143</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6 id="email-title">Email: <span class="text-secondary" id="email-description">isaacserviciosweb@gmail.com</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6 id="address-title">Address: <span class="text-secondary" id="address-description">Chile</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6 id="freelance-title">Freelance: <span class="text-secondary" id="freelance-description">Available</span></h6></div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<!-- About End --><!-- About End -->
     <!-- About End -->
 
 
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">BYU pathway Certificate</h5>
-                            <p class="mb-2"><strong>Brigham Young University</strong> | <small>Jan 2024 - Jun 2024</small></p>
-                            <p>The BYU Pathway program provided me with essential skills in communication, organization, and advanced English, while refining my technical abilities. Introduction to Programming was particularly impactful, as it laid the foundation for coding and problem-solving, sparking my passion for software development and preparing me for more advanced studies.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web and Computer Programming Certificate</h5>
-                            <p class="mb-2"><strong>Brigham Young University Idaho</strong> | <small>2024 - Present</small></p>
-                            <p>I am currently studying Web and Computer Programming at BYU-Idaho, where I am deepening my knowledge of software development. The program has enhanced my skills in coding, web design, and problem-solving while introducing me to industry-standard practices and technologies. These studies directly complement my work, allowing me to apply what I learn to real-world projects and continually grow as a developer.</p>
-                        </div>
+<!-- Qualification Start -->
+<div class="container-fluid py-5" id="qualification">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;" id="qualification-header">Quality</h1>
+            <h1 class="position-absolute text-uppercase text-primary" id="qualification-subheader">Education & Experience</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h3 id="education-title" class="mb-4">My Education</h3>
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1" id="education-item1-title">BYU pathway Certificate</h5>
+                        <p class="mb-2"><strong id="education-item1-institution">Brigham Young University</strong> | <small id="education-item1-duration">Jan 2024 - Jun 2024</small></p>
+                        <p id="education-item1-description">The BYU Pathway program provided me with essential skills in communication, organization, and advanced English, while refining my technical abilities. Introduction to Programming was particularly impactful, as it laid the foundation for coding and problem-solving, sparking my passion for software development and preparing me for more advanced studies.</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1" id="education-item2-title">Web and Computer Programming Certificate</h5>
+                        <p class="mb-2"><strong id="education-item2-institution">Brigham Young University Idaho</strong> | <small id="education-item2-duration">2024 - Present</small></p>
+                        <p id="education-item2-description">I am currently studying Web and Computer Programming at BYU-Idaho, where I am deepening my knowledge of software development. The program has enhanced my skills in coding, web design, and problem-solving while introducing me to industry-standard practices and technologies. These studies directly complement my work, allowing me to apply what I learn to real-world projects and continually grow as a developer.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Expericence</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Technology Leader</h5>
-                            <p class="mb-2"><strong>Chile Puerto Montt Mission</strong> | <small>jan. 2022 - Dec. 2050</small></p>
-                            <p>I coordinated the technological infrastructure and managed device mobility while maintaining detailed records. I provided technical support and maintained communication with both local and international users, significantly improving my English skills. Additionally, I trained missionaries in the effective use of technology to optimize communication and teamwork.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Junior Front-End Web Developer</h5>
-                            <p class="mb-2"><strong><a href="https://bilbaolabs.cl/" target="_blank">BilbaoLabs</a></strong> | <small>Jul 2024 - Dec 2024</small></p>
-                            <p>Specialized in updating and maintaining websites using HTML, CSS, and WordPress. Enhanced user experience through design changes, managed WooCommerce customizations, and performed thorough website testing. Created tailored pages and sections to meet client needs, delivering efficient and cost-effective web solutions to boost digital presence.</p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Freelance Web Developer</h5>
-                            <p class="mb-2"><strong>Independent</strong> | <small>sep 2024 - Present</small></p>
-                            <p>I have been working with local businesses, utilizing my skills in HTML, CSS, and WordPress to create e-commerce websites, personal pages, and other web solutions tailored to client needs.</p>
-                        </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 id="experience-title" class="mb-4">My Experience</h3>
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1" id="experience-item1-title">Technology Leader</h5>
+                        <p class="mb-2"><strong id="experience-item1-company">Chile Puerto Montt Mission</strong> | <small id="experience-item1-duration">Jan 2022 - Dec 2050</small></p>
+                        <p id="experience-item1-description">I coordinated the technological infrastructure and managed device mobility while maintaining detailed records. I provided technical support and maintained communication with both local and international users, significantly improving my English skills. Additionally, I trained missionaries in the effective use of technology to optimize communication and teamwork.</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1" id="experience-item2-title">Junior Front-End Web Developer</h5>
+                        <p class="mb-2"><strong id="experience-item2-company"><a href="https://bilbaolabs.cl/" target="_blank">BilbaoLabs</a></strong> | <small id="experience-item2-duration">Jul 2024 - Dec 2024</small></p>
+                        <p id="experience-item2-description">Specialized in updating and maintaining websites using HTML, CSS, and WordPress. Enhanced user experience through design changes, managed WooCommerce customizations, and performed thorough website testing. Created tailored pages and sections to meet client needs, delivering efficient and cost-effective web solutions to boost digital presence.</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1" id="experience-item3-title">Freelance Web Developer</h5>
+                        <p class="mb-2"><strong id="experience-item3-company">Independent</strong> | <small id="experience-item3-duration">Sep 2024 - Present</small></p>
+                        <p id="experience-item3-description">I have been working with local businesses, utilizing my skills in HTML, CSS, and WordPress to create e-commerce websites, personal pages, and other web solutions tailored to client needs.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Qualification End -->
-
+</div>
+<!-- Qualification End -->
 
     <!-- Skill Start -->
     <div class="container-fluid py-5" id="skill">
@@ -230,31 +240,31 @@
 
 
     <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+<div class="container-fluid pt-5" id="service">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;" id="service-header">Service</h1>
+            <h1 class="position-absolute text-uppercase text-primary" id="service-subheader">My Services</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0" id="service1-title">Web Design</h4>
+                </div>
+                <p id="service1-description">I create customized and user-friendly websites tailored to your needs. From personal blogs to business sites, I guarantee responsive designs, smooth functionality, and a professional online presence to help you stand out.</p>
             </div>
-            <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Design</h4>
-                    </div>
-                    <p>I create customized and user-friendly websites tailored to your needs. From personal blogs to business sites, I guarantee responsive designs, smooth functionality, and a professional online presence to help you stand out.</p>
+            <div class="col-lg-4 col-md-6 text-center mb-5">
+                <div class="d-flex align-items-center justify-content-center mb-4">
+                    <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                    <h4 class="font-weight-bold m-0" id="service2-title">Web Development</h4>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Development</h4>
-                    </div>
-                    <p>I offer complete web development services, from creating static websites to dynamic web applications. I handle responsive design, smooth functionality, and user experience, both on the front-end and back-end. Whether it's a personal or business site, I ensure a professional online presence tailored to your needs.</p>
-                </div>
+                <p id="service2-description">I offer complete web development services, from creating static websites to dynamic web applications. I handle responsive design, smooth functionality, and user experience, both on the front-end and back-end. Whether it's a personal or business site, I ensure a professional online presence tailored to your needs.</p>
             </div>
         </div>
     </div>
-    <!-- Services End -->
+</div>
+<!-- Services End -->
 
 
     <!-- Portfolio Start -->
@@ -380,54 +390,7 @@
     <!-- Testimonial End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form text-center">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                        required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                        required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
-                                    Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
+    
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
@@ -462,6 +425,141 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+<script>
+    function changeLanguage(language) {
+        if (language === 'es') {
+            document.querySelector('.navbar-brand h1').innerHTML = '<span class="text-primary">Isaac</span>Maldonado';
+            document.querySelector('.nav-item.nav-link.active').innerText = 'Inicio';
+            document.querySelector('.nav-item.nav-link[href="#about"]').innerText = 'Acerca de';
+            document.querySelector('.nav-item.nav-link[href="#qualification"]').innerText = 'Calificaciones';
+            document.querySelector('.nav-item.nav-link[href="#skill"]').innerText = 'Habilidades';
+            document.querySelector('.nav-item.nav-link[href="#service"]').innerText = 'Servicios';
+            document.querySelector('.nav-item.nav-link[href="#portfolio"]').innerText = 'Portafolio';
+            document.querySelector('.nav-item.nav-link[href="#testimonial"]').innerText = 'Reseñas';
+            document.querySelector('.nav-item.nav-link[href="#contact"]').innerText = 'Contacto';
+
+            document.getElementById('about-title').innerText = 'Programador y Desarrollador Web';
+            document.getElementById('about-description').innerText = 'Soy Isaac, un apasionado programador y desarrollador web de Chile con experiencia en desarrollo front-end, diseño de sitios web fáciles de usar y mejora del rendimiento web. Anteriormente trabajé en BilbaoLabs, contribuyendo a diversos proyectos para empresas, y ahora me enfoco en crear sitios web personalizados para proyectos personales y locales. Con una base en programación desde mi adolescencia y estudios continuos en Desarrollo de Software en BYU Idaho, aporto creatividad, dedicación y amor por el aprendizaje continuo a cada proyecto que realizo.';
+            document.getElementById('education-title').innerText = 'Mi Educación';
+            document.getElementById('qualification-header').innerText = 'Calidad';
+            document.getElementById('qualification-subheader').innerText = 'Educación y Experiencia';
+
+            document.getElementById('service-header').innerText = 'Servicios';
+            document.getElementById('service-subheader').innerText = 'Mis Servicios';
+            document.getElementById('service1-title').innerText = 'Diseño Web';
+            document.getElementById('service1-description').innerText = 'Creo sitios web personalizados y fáciles de usar adaptados a tus necesidades. Desde blogs personales hasta sitios comerciales, garantizo diseños responsivos, funcionalidad fluida y una presencia en línea profesional para ayudarte a destacar.';
+            document.getElementById('service2-title').innerText = 'Desarrollo Web';
+            document.getElementById('service2-description').innerText = 'Ofrezco servicios completos de desarrollo web, desde la creación de sitios estáticos hasta aplicaciones web dinámicas. Manejo el diseño responsivo, la funcionalidad fluida y la experiencia del usuario, tanto en el front-end como en el back-end. Ya sea un sitio personal o comercial, aseguro una presencia en línea profesional adaptada a tus necesidades.';
+
+
+            document.querySelector('.navbar-brand h1').innerHTML = '<span class="text-primary">Isaac</span>Maldonado';
+            document.querySelector('.nav-item.nav-link.active').innerText = 'Inicio';
+            document.querySelector('.nav-item.nav-link[href="#about"]').innerText = 'Acerca de';
+            document.querySelector('.nav-item.nav-link[href="#qualification"]').innerText = 'Calificaciones';
+            document.querySelector('.nav-item.nav-link[href="#skill"]').innerText = 'Habilidades';
+            document.querySelector('.nav-item.nav-link[href="#service"]').innerText = 'Servicios';
+            document.querySelector('.nav-item.nav-link[href="#portfolio"]').innerText = 'Portafolio';
+            document.querySelector('.nav-item.nav-link[href="#testimonial"]').innerText = 'Reseñas';
+            document.querySelector('.nav-item.nav-link[href="#contact"]').innerText = 'Contacto';
+
+            document.getElementById('about-title').innerText = 'Programador y Desarrollador Web';
+            document.getElementById('about-description').innerText = 'Soy Isaac, un apasionado programador y desarrollador web de Chile con experiencia en desarrollo front-end, diseño de sitios web fáciles de usar y mejora del rendimiento web. Anteriormente trabajé en BilbaoLabs, contribuyendo a diversos proyectos para empresas, y ahora me enfoco en crear sitios web personalizados para proyectos personales y locales. Con una base en programación desde mi adolescencia y estudios continuos en Desarrollo de Software en BYU Idaho, aporto creatividad, dedicación y amor por el aprendizaje continuo a cada proyecto que realizo.';
+            document.getElementById('education-title').
+            // Education y calidad
+            innerText = 'Mi Educación';
+            document.getElementById('qualification-header').innerText = 'Calidad';
+            document.getElementById('qualification-subheader').innerText = 'Educación y Experiencia';
+            document.getElementById('education-title').innerText = 'Mi Educación';
+            document.getElementById('education-item1-title').innerText = 'Certificado BYU Pathway';
+            document.getElementById('education-item1-institution').innerText = 'Universidad Brigham Young';
+            document.getElementById('education-item1-duration').innerText = 'Ene 2024 - Jun 2024';
+            document.getElementById('education-item1-description').innerText = 'El programa BYU Pathway me proporcionó habilidades esenciales en comunicación, organización y inglés avanzado, mientras refinaba mis habilidades técnicas. La Introducción a la Programación fue particularmente impactante, ya que sentó las bases para la codificación y la resolución de problemas, despertando mi pasión por el desarrollo de software y preparándome para estudios más avanzados.';
+            document.getElementById('education-item2-title').innerText = 'Certificado en Programación Web y Computación';
+            document.getElementById('education-item2-institution').innerText = 'Universidad Brigham Young Idaho';
+            document.getElementById('education-item2-duration').innerText = '2024 - Presente';
+            document.getElementById('education-item2-description').innerText = 'Actualmente estoy estudiando Programación Web y Computación en BYU-Idaho, donde estoy profundizando mi conocimiento en desarrollo de software. El programa ha mejorado mis habilidades en codificación, diseño web y resolución de problemas, mientras me introduce a prácticas y tecnologías estándar de la industria. Estos estudios complementan directamente mi trabajo, permitiéndome aplicar lo que aprendo a proyectos del mundo real y crecer continuamente como desarrollador.';
+
+            document.getElementById('experience-title').innerText = 'Mi Experiencia';
+            document.getElementById('experience-item1-title').innerText = 'Líder Tecnológico';
+            document.getElementById('experience-item1-company').innerText = 'Misión Chile Puerto Montt';
+            document.getElementById('experience-item1-duration').innerText = 'Ene 2022 - Dic 2050';
+            document.getElementById('experience-item1-description').innerText = 'Coordiné la infraestructura tecnológica y gestioné la movilidad de dispositivos mientras mantenía registros detallados. Proporcioné soporte técnico y mantuve la comunicación con usuarios locales e internacionales, mejorando significativamente mis habilidades en inglés. Además, entrené a los misioneros en el uso efectivo de la tecnología para optimizar la comunicación y el trabajo en equipo.';
+            document.getElementById('experience-item2-title').innerText = 'Desarrollador Web Junior Front-End';
+            document.getElementById('experience-item2-company').innerHTML = '<a href="https://bilbaolabs.cl/" target="_blank">BilbaoLabs</a>';
+            document.getElementById('experience-item2-duration').innerText = 'Jul 2024 - Dic 2024';
+            document.getElementById('experience-item2-description').innerText = 'Especializado en la actualización y mantenimiento de sitios web utilizando HTML, CSS y WordPress. Mejoré la experiencia del usuario a través de cambios de diseño, gestioné personalizaciones de WooCommerce y realicé pruebas exhaustivas de sitios web. Creé páginas y secciones personalizadas para satisfacer las necesidades del cliente, ofreciendo soluciones web eficientes y rentables para mejorar la presencia digital.';
+            document.getElementById('experience-item3-title').innerText = 'Desarrollador Web Freelance';
+            document.getElementById('experience-item3-company').innerText = 'Independiente';
+            document.getElementById('experience-item3-duration').innerText = 'Sep 2024 - Presente';
+            document.getElementById('experience-item3-description').innerText = 'He estado trabajando con negocios locales, utilizando mis habilidades en HTML, CSS y WordPress para crear sitios web de comercio electrónico, páginas personales y otras soluciones web adaptadas a las necesidades del cliente.';
+        } else if (language === 'en') {
+            document.querySelector('.navbar-brand h1').innerHTML = '<span class="text-primary">Isaac</span>Maldonado';
+            document.querySelector('.nav-item.nav-link.active').innerText = 'Home';
+            document.querySelector('.nav-item.nav-link[href="#about"]').innerText = 'About';
+            document.querySelector('.nav-item.nav-link[href="#qualification"]').innerText = 'Quality';
+            document.querySelector('.nav-item.nav-link[href="#skill"]').innerText = 'Skill';
+            document.querySelector('.nav-item.nav-link[href="#service"]').innerText = 'Service';
+            document.querySelector('.nav-item.nav-link[href="#portfolio"]').innerText = 'Portfolio';
+            document.querySelector('.nav-item.nav-link[href="#testimonial"]').innerText = 'Review';
+            document.querySelector('.nav-item.nav-link[href="#contact"]').innerText = 'Contact';
+
+            document.getElementById('about-title').innerText = 'Programmer & Web Developer';
+            document.getElementById('about-description').innerText = "I'm Isaac, a passionate programmer and web developer from Chile with experience in front-end development, designing user-friendly websites, and enhancing web performance. I previously worked at BilbaoLabs, contributing to diverse projects for businesses, and now focus on creating custom websites for personal and local ventures. With a foundation in programming since my teens and ongoing studies in Software Development at BYU Idaho, I bring creativity, dedication, and a love for continuous learning to every project I take on.";
+            document.getElementById('education-title').innerText = 'My Education';
+            document.getElementById('qualification-header').innerText = 'Quality';
+            document.getElementById('qualification-subheader').innerText = 'Education & Experience';
+
+            document.getElementById('service-header').innerText = 'Service';
+            document.getElementById('service-subheader').innerText = 'My Services';
+            document.getElementById('service1-title').innerText = 'Web Design';
+            document.getElementById('service1-description').innerText = 'I create customized and user-friendly websites tailored to your needs. From personal blogs to business sites, I guarantee responsive designs, smooth functionality, and a professional online presence to help you stand out.';
+            document.getElementById('service2-title').innerText = 'Web Development';
+            document.getElementById('service2-description').innerText = 'I offer complete web development services, from creating static websites to dynamic web applications. I handle responsive design, smooth functionality, and user experience, both on the front-end and back-end. Whether it\'s a personal or business site, I ensure a professional online presence tailored to your needs.';
+        
+
+            document.querySelector('.navbar-brand h1').innerHTML = '<span class="text-primary">Isaac</span>Maldonado';
+            document.querySelector('.nav-item.nav-link.active').innerText = 'Home';
+            document.querySelector('.nav-item.nav-link[href="#about"]').innerText = 'About';
+            document.querySelector('.nav-item.nav-link[href="#qualification"]').innerText = 'Quality';
+            document.querySelector('.nav-item.nav-link[href="#skill"]').innerText = 'Skill';
+            document.querySelector('.nav-item.nav-link[href="#service"]').innerText = 'Service';
+            document.querySelector('.nav-item.nav-link[href="#portfolio"]').innerText = 'Portfolio';
+            document.querySelector('.nav-item.nav-link[href="#testimonial"]').innerText = 'Review';
+            document.querySelector('.nav-item.nav-link[href="#contact"]').innerText = 'Contact';
+
+            document.getElementById('about-title').innerText = 'Programmer & Web Developer';
+            document.getElementById('about-description').innerText = "I'm Isaac, a passionate programmer and web developer from Chile with experience in front-end development, designing user-friendly websites, and enhancing web performance. I previously worked at BilbaoLabs, contributing to diverse projects for businesses, and now focus on creating custom websites for personal and local ventures. With a foundation in programming since my teens and ongoing studies in Software Development at BYU Idaho, I bring creativity, dedication, and a love for continuous learning to every project I take on.";
+            document.getElementById('education-title').innerText = 'My Education';
+            // Cambia el resto del contenido al inglés
+
+            document.getElementById('qualification-header').innerText = 'Quality';
+            document.getElementById('qualification-subheader').innerText = 'Education & Experience';
+            document.getElementById('education-title').innerText = 'My Education';
+            document.getElementById('education-item1-title').innerText = 'BYU pathway Certificate';
+            document.getElementById('education-item1-institution').innerText = 'Brigham Young University';
+            document.getElementById('education-item1-duration').innerText = 'Jan 2024 - Jun 2024';
+            document.getElementById('education-item1-description').innerText = 'The BYU Pathway program provided me with essential skills in communication, organization, and advanced English, while refining my technical abilities. Introduction to Programming was particularly impactful, as it laid the foundation for coding and problem-solving, sparking my passion for software development and preparing me for more advanced studies.';
+            document.getElementById('education-item2-title').innerText = 'Web and Computer Programming Certificate';
+            document.getElementById('education-item2-institution').innerText = 'Brigham Young University Idaho';
+            document.getElementById('education-item2-duration').innerText = '2024 - Present';
+            document.getElementById('education-item2-description').innerText = 'I am currently studying Web and Computer Programming at BYU-Idaho, where I am deepening my knowledge of software development. The program has enhanced my skills in coding, web design, and problem-solving while introducing me to industry-standard practices and technologies. These studies directly complement my work, allowing me to apply what I learn to real-world projects and continually grow as a developer.';
+
+            document.getElementById('experience-title').innerText = 'My Experience';
+            document.getElementById('experience-item1-title').innerText = 'Technology Leader';
+            document.getElementById('experience-item1-company').innerText = 'Chile Puerto Montt Mission';
+            document.getElementById('experience-item1-duration').innerText = 'Jan 2022 - Dec 2050';
+            document.getElementById('experience-item1-description').innerText = 'I coordinated the technological infrastructure and managed device mobility while maintaining detailed records. I provided technical support and maintained communication with both local and international users, significantly improving my English skills. Additionally, I trained missionaries in the effective use of technology to optimize communication and teamwork.';
+            document.getElementById('experience-item2-title').innerText = 'Junior Front-End Web Developer';
+            document.getElementById('experience-item2-company').innerHTML = '<a href="https://bilbaolabs.cl/" target="_blank">BilbaoLabs</a>';
+            document.getElementById('experience-item2-duration').innerText = 'Jul 2024 - Dec 2024';
+            document.getElementById('experience-item2-description').innerText = 'Specialized in updating and maintaining websites using HTML, CSS, and WordPress. Enhanced user experience through design changes, managed WooCommerce customizations, and performed thorough website testing. Created tailored pages and sections to meet client needs, delivering efficient and cost-effective web solutions to boost digital presence.';
+            document.getElementById('experience-item3-title').innerText = 'Freelance Web Developer';
+            document.getElementById('experience-item3-company').innerText = 'Independent';
+            document.getElementById('experience-item3-duration').innerText = 'Sep 2024 - Present';
+            document.getElementById('experience-item3-description').innerText = 'I have been working with local businesses, utilizing my skills in HTML, CSS, and WordPress to create e-commerce websites, personal pages, and other web solutions tailored to client needs.';
+        }
+    }
+</script>
 </body>
 
 </html>
