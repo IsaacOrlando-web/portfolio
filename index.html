@@ -80,7 +80,7 @@
                     <h3 class="text-white font-weight-normal mb-3">I'm</h3>
                     <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Isaac Maldonado</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Web Developer, Front End Developer</div>
+                    <div class="typed-text d-none">Software Developer, Specialized in web development</div>
                 <!--<div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Idioma
@@ -206,12 +206,17 @@
                     <p class="mt-2 mb-0">JavaScript</p>
                 </div>
                 <div class="col-6 col-md-3 text-center mb-4">
-                    <img src="img/skills/wordpress.png" alt="WordPress" class="img-fluid" style="max-height:80px;">
-                    <p class="mt-2 mb-0">WordPress</p>
+                    <img src="img/skills/node.png" alt="JavaScript" class="img-fluid" style="max-height:80px;">
+                    <p class="mt-2 mb-0">Node.Js</p>
                 </div>
                 <div class="col-6 col-md-3 text-center mb-4">
-                    <img src="img/skills/woocommerce.png" alt="WordPress" class="img-fluid" style="max-height:80px;">
-                    <p class="mt-2 mb-0">WooCommerce</p>
+                    <img src="img/skills/angular.png" alt="JavaScript" class="img-fluid" style="max-height:80px;">
+                    <p class="mt-2 mb-0">Angular</p>
+                </div>
+                
+                <div class="col-6 col-md-3 text-center mb-4">
+                    <img src="img/skills/wordpress.png" alt="WordPress" class="img-fluid" style="max-height:80px;">
+                    <p class="mt-2 mb-0">WordPress</p>
                 </div>
                 <div class="col-6 col-md-3 text-center mb-4">
                     <img src="img/skills/python.png" alt="WordPress" class="img-fluid" style="max-height:80px;">
@@ -269,56 +274,182 @@
 Services End -->
 
 
-    <!-- Portfolio Start -->
-        <div id="portfolio">
+    <!-- Portfolio Section -->
+    <div id="portfolio">
         <div class="container">
-            <h1 class="portafolio-title">My Portfolio</h1>
+            <h1 class="portfolio-title">My Portfolio</h1>
+            
+            <!-- Filtros -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Websites</button>
+                <button class="filter-btn" data-filter="frontend">Frontend Apps</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="desktop">Desktop</button>
+            </div>
+            
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/portafolio-1.webp" alt="Proyecto 1" class="img-fluid">
-                    <p>Wordpress, HTML, CSS</p>
-                    <a href="https://carolinasotoseguel.com/" target="_blank">Visit page</a>
+                <!-- Proyecto 1 - Website -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="web">
+                    <div class="portfolio-item">
+                        <img src="img/portafolio-1.webp" alt="Carolina Soto Seguel" class="portfolio-img">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Website</span>
+                            <h3 class="portfolio-title-item">Carolina Soto Seguel</h3>
+                            <p class="portfolio-description">Digital presence for a coach: An attractive and functional WordPress website designed to facilitate connection with new clients. Features an intuitive interface that communicates professionalism and converts visitors into leads.</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Wordpress</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <a href="https://carolinasotoseguel.com/" target="_blank" class="portfolio-link">Visit Website</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/portafolio-2.webp" alt="Proyecto 2" class="img-fluid">
-                    <p>Wordpress, HTML, CSS</p>
-                    <a href="https://victoriasotopormelipilla.org/" target="_blank">Visit page</a>
+                
+                <!-- Proyecto 2 - Website -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="web">
+                    <div class="portfolio-item">
+                        <img src="img/portafolio-2.webp" alt="Victoria Soto Por Melipilla" class="portfolio-img">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Website</span>
+                            <h3 class="portfolio-title-item">Victoria Soto Por Melipilla</h3>
+                            <p class="portfolio-description">Campaign website for Victoria Soto, political candidate in Melipilla. Developed a persuasive WordPress platform to communicate her proposals, connect with voters, and mobilize support throughout the electoral campaign.</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Wordpress</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <a href="https://victoriasotopormelipilla.org/" target="_blank" class="portfolio-link">Visit Website</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/portafolio-4.webp" alt="Chamber Coyhaique" class="img-fluid">
-                    <p>HTML, CSS, Javascript, API, JSON</p>
-                    <a href="https://isaacorlando-web.github.io/wdd231/chamber/index.html" target="_blank">Visit page</a>
+                
+                <!-- Proyecto 3 - Website -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="web">
+                    <div class="portfolio-item">
+                        <img src="img/portafolio-4.webp" alt="Chamber Coyhaique" class="portfolio-img">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Website</span>
+                            <h3 class="portfolio-title-item">Chamber Coyhaique</h3>
+                            <p class="portfolio-description">University Web Development Project: Created a Chamber of Commerce website for Coyhaique implementing dynamic JavaScript interfaces and external API integration for real-time weather display, showcasing advanced frontend capabilities.</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">JSON</span>
+                            </div>
+                            <a href="https://isaacorlando-web.github.io/wdd231/chamber/index.html" target="_blank" class="portfolio-link">Visit Website</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/portafolio-5.webp" alt="Proyecto 4" class="img-fluid">
-                    <p>HTML, CSS, Javascript</p>
-                    <a href="https://isaacorlando-web.github.io/wdd231/project/index.html" target="_blank">See website</a>
+                
+                <!-- Proyecto 4 - Website -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="web">
+                    <div class="portfolio-item">
+                        <img src="img/portafolio-5.webp" alt="Project Website" class="portfolio-img">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Website</span>
+                            <h3 class="portfolio-title-item">WDD231 Project</h3>
+                            <p class="portfolio-description">ChileReady - University Project: A dynamic JavaScript web application showcasing Chilean slang phrases and popular destinations. Implemented localStorage for saving user favorites, demonstrating client-side data persistence and interactive UI development.</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="https://isaacorlando-web.github.io/wdd231/project/index.html" target="_blank" class="portfolio-link">Visit Website</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/portafolio-6.webp" alt="Proyecto 5" class="img-fluid">
-                    <p>HTML, CSS, Javascript</p>
-                    <a href="https://isaacorlando-web.github.io/wdd131/project/index.html" target="_blank">See website</a>
+                
+                <!-- Proyecto 7 - Website (Pokemon API) -->
+<div class="col-lg-4 col-md-6 mb-4" data-category="web">
+    <div class="portfolio-item">
+        <img src="img/portafolio-8.webp.png" alt="Pokemon API" class="portfolio-img">
+        <div class="portfolio-content">
+            <span class="portfolio-category">Website</span>
+            <h3 class="portfolio-title-item">Pokemon API</h3>
+            <p class="portfolio-description">Pokédex API Project: Built a dynamic Pokémon catalog with type filtering capabilities. Leveraged JavaScript async/await for API calls and DOM manipulation for real-time interface updates.</p>
+            <div class="portfolio-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">API</span>
+            </div>
+            <a href="https://isaacorlando-web.github.io/wdd231/pokemonApi/" target="_blank" class="portfolio-link">View Project</a>
+        </div>
+    </div>
+</div>
+
+                <!-- Proyecto 10 - Backend (CSE Motors) -->
+                <div class="col-lg-4 col-md-6 mb-4" data-category="backend">
+                    <div class="portfolio-item">
+                        <img src="img/motors.png" alt="CSE Motors" class="portfolio-img">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Backend</span>
+                            <h3 class="portfolio-title-item">CSE Motors</h3>
+                            <p class="portfolio-description">Custom Vehicles - Full-stack web application built with Node.js and Express.js. Features user authentication with encrypted passwords, role-based permissions, and MVC architecture. Implements CRUD operations for vehicle management with secure database integration.</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <a href="https://cse340app-a7ub.onrender.com/" target="_blank" class="portfolio-link">View App</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/portafolio-7.webp" alt="Proyecto 6" class="img-fluid">
-                    <p>HTML, CSS</p>
-                    <a href="https://isaacorlando-web.github.io/wdd131/place.html" target="_blank">See website</a>
+                
+                <!-- Proyecto 9 - Desktop 
+                <div class="col-lg-4 col-md-6 mb-4" data-category="desktop">
+                    <div class="portfolio-item">
+                        <img src="img/portafolio-3.png" alt="Therapeutic Agenda" class="portfolio-img">
+                        <div class="portfolio-content">
+                            <span class="portfolio-category desktop">Desktop</span>
+                            <h3 class="portfolio-title-item">Therapeutic Agenda</h3>
+                            <p class="portfolio-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">CSV Library</span>
+                            </div>
+                            <a href="https://github.com/IsaacOrlando-web/therapeutic-agenda" target="_blank" class="portfolio-link">View Code</a>
+                        </div>
+                    </div>
+                </div>-->
+                <!-- Nueva categoría Frontend -->
+            <div class="col-lg-4 col-md-6 mb-4" data-category="frontend">
+                <div class="portfolio-item">
+                    <img src="img/angular.png" alt="Book Library App" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Frontend App</span>
+                        <h3 class="portfolio-title-item">Book Library</h3>
+                        <p class="portfolio-description">Angular Book Tracker: Interactive web application for personal library management. Enables users to catalog books, mark reading status, and organize collections using Angular's component-based architecture and data binding.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <a href="https://cozy-sundae-ccde3a.netlify.app/" target="_blank" class="portfolio-link">View App</a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/portafolio-8.webp.webp" alt="Proyecto 8" class="img-fluid">
-                    <p>HTML, CSS, Javascript, API</p>
-                    <a href="https://isaacorlando-web.github.io/wdd231/pokemonApi/" target="_blank">See website</a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-category="frontend">
+                <div class="portfolio-item">
+                    <img src="img/taskApp.png" alt="Book Library App" class="portfolio-img">
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Frontend App</span>
+                        <h3 class="portfolio-title-item">Task Manager</h3>
+                        <p class="portfolio-description">Task Manager - Angular Application: Developed a robust task management system using Angular framework. Features component-based architecture, reactive forms for task input, and efficient state management for tracking pending and completed tasks.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                        <a href="https://meek-piroshki-5e773c.netlify.app/" target="_blank" class="portfolio-link">View App</a>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/portafolio-9.webp" alt="Proyecto 9" class="img-fluid">
-                    <p>HTML, CSS, Javascript</p>
-                    <a href="https://isaacorlando-web.github.io/wdd131/filtered-temples.html" target="_blank">See website</a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <img src="img/portafolio-3.png" alt="Proyecto 7" class="img-fluid">
-                    <p>Python, csv Library</p>
-                    <a href="https://github.com/IsaacOrlando-web/therapeutic-agenda" target="_blank">See Program</a>
-                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -399,141 +530,5 @@ Services End -->
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-<script>
-    function changeLanguage(language) {
-        if (language === 'es') {
-            document.querySelector('.navbar-brand h1').innerHTML = '<span class="text-primary">Isaac</span>Maldonado';
-            document.querySelector('.nav-item.nav-link.active').innerText = 'Inicio';
-            document.querySelector('.nav-item.nav-link[href="#about"]').innerText = 'Acerca de';
-            document.querySelector('.nav-item.nav-link[href="#qualification"]').innerText = 'Calificaciones';
-            document.querySelector('.nav-item.nav-link[href="#skill"]').innerText = 'Habilidades';
-            document.querySelector('.nav-item.nav-link[href="#service"]').innerText = 'Servicios';
-            document.querySelector('.nav-item.nav-link[href="#portfolio"]').innerText = 'Portafolio';
-            document.querySelector('.nav-item.nav-link[href="#testimonial"]').innerText = 'Reseñas';
-            document.querySelector('.nav-item.nav-link[href="#contact"]').innerText = 'Contacto';
-
-            document.getElementById('about-title').innerText = 'Programador y Desarrollador Web';
-            document.getElementById('about-description').innerText = 'Soy Isaac, un apasionado programador y desarrollador web de Chile con experiencia en desarrollo front-end, diseño de sitios web fáciles de usar y mejora del rendimiento web. Anteriormente trabajé en BilbaoLabs, contribuyendo a diversos proyectos para empresas, y ahora me enfoco en crear sitios web personalizados para proyectos personales y locales. Con una base en programación desde mi adolescencia y estudios continuos en Desarrollo de Software en BYU Idaho, aporto creatividad, dedicación y amor por el aprendizaje continuo a cada proyecto que realizo.';
-            document.getElementById('education-title').innerText = 'Mi Educación';
-            document.getElementById('qualification-header').innerText = 'Calidad';
-            document.getElementById('qualification-subheader').innerText = 'Educación y Experiencia';
-
-            document.getElementById('service-header').innerText = 'Servicios';
-            document.getElementById('service-subheader').innerText = 'Mis Servicios';
-            document.getElementById('service1-title').innerText = 'Diseño Web';
-            document.getElementById('service1-description').innerText = 'Creo sitios web personalizados y fáciles de usar adaptados a tus necesidades. Desde blogs personales hasta sitios comerciales, garantizo diseños responsivos, funcionalidad fluida y una presencia en línea profesional para ayudarte a destacar.';
-            document.getElementById('service2-title').innerText = 'Desarrollo Web';
-            document.getElementById('service2-description').innerText = 'Ofrezco servicios completos de desarrollo web, desde la creación de sitios estáticos hasta aplicaciones web dinámicas. Manejo el diseño responsivo, la funcionalidad fluida y la experiencia del usuario, tanto en el front-end como en el back-end. Ya sea un sitio personal o comercial, aseguro una presencia en línea profesional adaptada a tus necesidades.';
-
-
-            document.querySelector('.navbar-brand h1').innerHTML = '<span class="text-primary">Isaac</span>Maldonado';
-            document.querySelector('.nav-item.nav-link.active').innerText = 'Inicio';
-            document.querySelector('.nav-item.nav-link[href="#about"]').innerText = 'Acerca de';
-            document.querySelector('.nav-item.nav-link[href="#qualification"]').innerText = 'Calificaciones';
-            document.querySelector('.nav-item.nav-link[href="#skill"]').innerText = 'Habilidades';
-            document.querySelector('.nav-item.nav-link[href="#service"]').innerText = 'Servicios';
-            document.querySelector('.nav-item.nav-link[href="#portfolio"]').innerText = 'Portafolio';
-            document.querySelector('.nav-item.nav-link[href="#testimonial"]').innerText = 'Reseñas';
-            document.querySelector('.nav-item.nav-link[href="#contact"]').innerText = 'Contacto';
-
-            document.getElementById('about-title').innerText = 'Programador y Desarrollador Web';
-            document.getElementById('about-description').innerText = 'Soy Isaac, un apasionado programador y desarrollador web de Chile con experiencia en desarrollo front-end, diseño de sitios web fáciles de usar y mejora del rendimiento web. Anteriormente trabajé en BilbaoLabs, contribuyendo a diversos proyectos para empresas, y ahora me enfoco en crear sitios web personalizados para proyectos personales y locales. Con una base en programación desde mi adolescencia y estudios continuos en Desarrollo de Software en BYU Idaho, aporto creatividad, dedicación y amor por el aprendizaje continuo a cada proyecto que realizo.';
-            document.getElementById('education-title').
-            // Education y calidad
-            innerText = 'Mi Educación';
-            document.getElementById('qualification-header').innerText = 'Calidad';
-            document.getElementById('qualification-subheader').innerText = 'Educación y Experiencia';
-            document.getElementById('education-title').innerText = 'Mi Educación';
-            document.getElementById('education-item1-title').innerText = 'Certificado BYU Pathway';
-            document.getElementById('education-item1-institution').innerText = 'Universidad Brigham Young';
-            document.getElementById('education-item1-duration').innerText = 'Ene 2024 - Jun 2024';
-            document.getElementById('education-item1-description').innerText = 'El programa BYU Pathway me proporcionó habilidades esenciales en comunicación, organización y inglés avanzado, mientras refinaba mis habilidades técnicas. La Introducción a la Programación fue particularmente impactante, ya que sentó las bases para la codificación y la resolución de problemas, despertando mi pasión por el desarrollo de software y preparándome para estudios más avanzados.';
-            document.getElementById('education-item2-title').innerText = 'Certificado en Programación Web y Computación';
-            document.getElementById('education-item2-institution').innerText = 'Universidad Brigham Young Idaho';
-            document.getElementById('education-item2-duration').innerText = '2024 - Presente';
-            document.getElementById('education-item2-description').innerText = 'Actualmente estoy estudiando Programación Web y Computación en BYU-Idaho, donde estoy profundizando mi conocimiento en desarrollo de software. El programa ha mejorado mis habilidades en codificación, diseño web y resolución de problemas, mientras me introduce a prácticas y tecnologías estándar de la industria. Estos estudios complementan directamente mi trabajo, permitiéndome aplicar lo que aprendo a proyectos del mundo real y crecer continuamente como desarrollador.';
-
-            document.getElementById('experience-title').innerText = 'Mi Experiencia';
-            document.getElementById('experience-item1-title').innerText = 'Líder Tecnológico';
-            document.getElementById('experience-item1-company').innerText = 'Misión Chile Puerto Montt';
-            document.getElementById('experience-item1-duration').innerText = 'Ene 2022 - Dic 2050';
-            document.getElementById('experience-item1-description').innerText = 'Coordiné la infraestructura tecnológica y gestioné la movilidad de dispositivos mientras mantenía registros detallados. Proporcioné soporte técnico y mantuve la comunicación con usuarios locales e internacionales, mejorando significativamente mis habilidades en inglés. Además, entrené a los misioneros en el uso efectivo de la tecnología para optimizar la comunicación y el trabajo en equipo.';
-            document.getElementById('experience-item2-title').innerText = 'Desarrollador Web Junior Front-End';
-            document.getElementById('experience-item2-company').innerHTML = '<a href="https://bilbaolabs.cl/" target="_blank">BilbaoLabs</a>';
-            document.getElementById('experience-item2-duration').innerText = 'Jul 2024 - Dic 2024';
-            document.getElementById('experience-item2-description').innerText = 'Especializado en la actualización y mantenimiento de sitios web utilizando HTML, CSS y WordPress. Mejoré la experiencia del usuario a través de cambios de diseño, gestioné personalizaciones de WooCommerce y realicé pruebas exhaustivas de sitios web. Creé páginas y secciones personalizadas para satisfacer las necesidades del cliente, ofreciendo soluciones web eficientes y rentables para mejorar la presencia digital.';
-            document.getElementById('experience-item3-title').innerText = 'Desarrollador Web Freelance';
-            document.getElementById('experience-item3-company').innerText = 'Independiente';
-            document.getElementById('experience-item3-duration').innerText = 'Sep 2024 - Presente';
-            document.getElementById('experience-item3-description').innerText = 'He estado trabajando con negocios locales, utilizando mis habilidades en HTML, CSS y WordPress para crear sitios web de comercio electrónico, páginas personales y otras soluciones web adaptadas a las necesidades del cliente.';
-        } else if (language === 'en') {
-            document.querySelector('.navbar-brand h1').innerHTML = '<span class="text-primary">Isaac</span>Maldonado';
-            document.querySelector('.nav-item.nav-link.active').innerText = 'Home';
-            document.querySelector('.nav-item.nav-link[href="#about"]').innerText = 'About';
-            document.querySelector('.nav-item.nav-link[href="#qualification"]').innerText = 'Quality';
-            document.querySelector('.nav-item.nav-link[href="#skill"]').innerText = 'Skill';
-            document.querySelector('.nav-item.nav-link[href="#service"]').innerText = 'Service';
-            document.querySelector('.nav-item.nav-link[href="#portfolio"]').innerText = 'Portfolio';
-            document.querySelector('.nav-item.nav-link[href="#testimonial"]').innerText = 'Review';
-            document.querySelector('.nav-item.nav-link[href="#contact"]').innerText = 'Contact';
-
-            document.getElementById('about-title').innerText = 'Programmer & Web Developer';
-            document.getElementById('about-description').innerText = "I'm Isaac, a passionate programmer and web developer from Chile with experience in front-end development, designing user-friendly websites, and enhancing web performance. I previously worked at BilbaoLabs, contributing to diverse projects for businesses, and now focus on creating custom websites for personal and local ventures. With a foundation in programming since my teens and ongoing studies in Software Development at BYU Idaho, I bring creativity, dedication, and a love for continuous learning to every project I take on.";
-            document.getElementById('education-title').innerText = 'My Education';
-            document.getElementById('qualification-header').innerText = 'Quality';
-            document.getElementById('qualification-subheader').innerText = 'Education & Experience';
-
-            document.getElementById('service-header').innerText = 'Service';
-            document.getElementById('service-subheader').innerText = 'My Services';
-            document.getElementById('service1-title').innerText = 'Web Design';
-            document.getElementById('service1-description').innerText = 'I create customized and user-friendly websites tailored to your needs. From personal blogs to business sites, I guarantee responsive designs, smooth functionality, and a professional online presence to help you stand out.';
-            document.getElementById('service2-title').innerText = 'Web Development';
-            document.getElementById('service2-description').innerText = 'I offer complete web development services, from creating static websites to dynamic web applications. I handle responsive design, smooth functionality, and user experience, both on the front-end and back-end. Whether it\'s a personal or business site, I ensure a professional online presence tailored to your needs.';
-        
-
-            document.querySelector('.navbar-brand h1').innerHTML = '<span class="text-primary">Isaac</span>Maldonado';
-            document.querySelector('.nav-item.nav-link.active').innerText = 'Home';
-            document.querySelector('.nav-item.nav-link[href="#about"]').innerText = 'About';
-            document.querySelector('.nav-item.nav-link[href="#qualification"]').innerText = 'Quality';
-            document.querySelector('.nav-item.nav-link[href="#skill"]').innerText = 'Skill';
-            document.querySelector('.nav-item.nav-link[href="#service"]').innerText = 'Service';
-            document.querySelector('.nav-item.nav-link[href="#portfolio"]').innerText = 'Portfolio';
-            document.querySelector('.nav-item.nav-link[href="#testimonial"]').innerText = 'Review';
-            document.querySelector('.nav-item.nav-link[href="#contact"]').innerText = 'Contact';
-
-            document.getElementById('about-title').innerText = 'Programmer & Web Developer';
-            document.getElementById('about-description').innerText = "I'm Isaac, a passionate programmer and web developer from Chile with experience in front-end development, designing user-friendly websites, and enhancing web performance. I previously worked at BilbaoLabs, contributing to diverse projects for businesses, and now focus on creating custom websites for personal and local ventures. With a foundation in programming since my teens and ongoing studies in Software Development at BYU Idaho, I bring creativity, dedication, and a love for continuous learning to every project I take on.";
-            document.getElementById('education-title').innerText = 'My Education';
-            // Cambia el resto del contenido al inglés
-
-            document.getElementById('qualification-header').innerText = 'Quality';
-            document.getElementById('qualification-subheader').innerText = 'Education & Experience';
-            document.getElementById('education-title').innerText = 'My Education';
-            document.getElementById('education-item1-title').innerText = 'BYU pathway Certificate';
-            document.getElementById('education-item1-institution').innerText = 'Brigham Young University';
-            document.getElementById('education-item1-duration').innerText = 'Jan 2024 - Jun 2024';
-            document.getElementById('education-item1-description').innerText = 'The BYU Pathway program provided me with essential skills in communication, organization, and advanced English, while refining my technical abilities. Introduction to Programming was particularly impactful, as it laid the foundation for coding and problem-solving, sparking my passion for software development and preparing me for more advanced studies.';
-            document.getElementById('education-item2-title').innerText = 'Web and Computer Programming Certificate';
-            document.getElementById('education-item2-institution').innerText = 'Brigham Young University Idaho';
-            document.getElementById('education-item2-duration').innerText = '2024 - Present';
-            document.getElementById('education-item2-description').innerText = 'I am currently studying Web and Computer Programming at BYU-Idaho, where I am deepening my knowledge of software development. The program has enhanced my skills in coding, web design, and problem-solving while introducing me to industry-standard practices and technologies. These studies directly complement my work, allowing me to apply what I learn to real-world projects and continually grow as a developer.';
-
-            document.getElementById('experience-title').innerText = 'My Experience';
-            document.getElementById('experience-item1-title').innerText = 'Technology Leader';
-            document.getElementById('experience-item1-company').innerText = 'Chile Puerto Montt Mission';
-            document.getElementById('experience-item1-duration').innerText = 'Jan 2022 - Dec 2050';
-            document.getElementById('experience-item1-description').innerText = 'I coordinated the technological infrastructure and managed device mobility while maintaining detailed records. I provided technical support and maintained communication with both local and international users, significantly improving my English skills. Additionally, I trained missionaries in the effective use of technology to optimize communication and teamwork.';
-            document.getElementById('experience-item2-title').innerText = 'Junior Front-End Web Developer';
-            document.getElementById('experience-item2-company').innerHTML = '<a href="https://bilbaolabs.cl/" target="_blank">BilbaoLabs</a>';
-            document.getElementById('experience-item2-duration').innerText = 'Jul 2024 - Dec 2024';
-            document.getElementById('experience-item2-description').innerText = 'Specialized in updating and maintaining websites using HTML, CSS, and WordPress. Enhanced user experience through design changes, managed WooCommerce customizations, and performed thorough website testing. Created tailored pages and sections to meet client needs, delivering efficient and cost-effective web solutions to boost digital presence.';
-            document.getElementById('experience-item3-title').innerText = 'Freelance Web Developer';
-            document.getElementById('experience-item3-company').innerText = 'Independent';
-            document.getElementById('experience-item3-duration').innerText = 'Sep 2024 - Present';
-            document.getElementById('experience-item3-description').innerText = 'I have been working with local businesses, utilizing my skills in HTML, CSS, and WordPress to create e-commerce websites, personal pages, and other web solutions tailored to client needs.';
-        }
-    }
-</script>
 </body>
-
 </html>

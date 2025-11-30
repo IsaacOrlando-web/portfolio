@@ -115,3 +115,31 @@
     
 })(jQuery);
 
+// Filtrado de proyectos
+document.addEventListener('DOMContentLoaded', function() {
+const filterButtons = document.querySelectorAll('.filter-btn');
+const portfolioItems = document.querySelectorAll('[data-category]');
+    
+filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        // Remover clase active de todos los botones
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Agregar clase active al botón clickeado
+        this.classList.add('active');
+        
+        const filterValue = this.getAttribute('data-filter');
+        
+        portfolioItems.forEach(item => {
+            // Mostrar todos si es 'all', o solo los que coincidan con la categoría
+            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                item.style.display = 'block';
+                // Forzar reflow para animaciones si las hay
+                item.offsetHeight;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+});
