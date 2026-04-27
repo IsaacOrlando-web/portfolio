@@ -10218,3 +10218,13 @@ h6,
                 font-size: 0.9rem;
             }
         }
+.benjamin-button{
+  background-color: #0BCEAF;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: auto;
+  display: block;
+  font-weight: bold;
+}
